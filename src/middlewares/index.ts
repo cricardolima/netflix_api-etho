@@ -1,4 +1,4 @@
 import {validateSchema} from "../middlewares/validation.middlewares"
-// import { errorHandler} from "./error-handler.middleware"
+import { errorHandlerMidleware} from "./error-handler.middleware"
 
-export { validateSchema }
+export { validateSchema, errorHandlerMidleware }

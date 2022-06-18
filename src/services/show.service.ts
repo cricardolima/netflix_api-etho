@@ -23,7 +23,7 @@ export class ShowService {
    * @param id Show id
    * @returns Show
    * @throws ShowNotFoundError
-   * 
+   *
    * @example
    * const show = await new ShowService().listOne(1);
    * console.log(show);
@@ -58,19 +58,19 @@ export class ShowService {
    * @param id Show id
    * @returns Returns the deleted show.
    * @throws ShowNotFoundError
-   * 
+   *
    * @example
    * const show = await new ShowService().delete(1);
    * console.log(show);
    * // { id: 1, title: "Show 1", ... }
-    */
+   */
   async delete(id: number): Promise<Show | null> {
     const showFounded = await this.showRepository.findOne({ where: { id } });
 
     if (!showFounded) {
       throw new NotFoundException(`Show with id ${id} not found`);
     }
-    
+
     return this.showRepository.remove(showFounded);
   }
 }
