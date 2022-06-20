@@ -3,6 +3,6 @@ import HttpException from "./http.exception";
 
 export default class IntegrityException extends HttpException {
     constructor(message: string) {
-        super(message, HTTP_STATUS.CONFLITCT);
+        super(message, HTTP_STATUS.CONFLICT);
     }
 }

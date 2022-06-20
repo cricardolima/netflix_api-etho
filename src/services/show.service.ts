@@ -1,8 +1,9 @@
 import { Repository } from "typeorm";
 import { AppDataSource } from "../../configs/database/data-source";
-import { Show } from "../entities";
+import { Episode, Show } from "../entities";
 import NotFoundException from "../exceptions/not-found-exception.exception";
 import IntegrityException from "../exceptions/integrity.exception";
+import { episodeRoutes } from "../routers/episode.router";
 
 export class ShowService {
   private showRepository: Repository<Show>;

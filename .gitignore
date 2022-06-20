@@ -1,31 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@cricardolima 
-BrunoBNascimento
-/
-netflix-api
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-netflix-api/.gitignore 
-@BrunoBNascimento
-BrunoBNascimento 🚀
-Latest commit 97a0b9f 4 days ago
- History
- 1 contributor
-133 lines (99 sloc)  2.04 KB
-
 # Logs
 logs
 *.log
