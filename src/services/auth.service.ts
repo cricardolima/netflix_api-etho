@@ -17,7 +17,7 @@ export class AuthService {
             sub: user.id,
             iat: Date.now(),
             email: user.email,
-        }, "Super secret shit");
+        }, process.env.JWT_SECRET || "");
     }
     /**
      * @description Login user

@@ -14,7 +14,7 @@ export const injectUser = async (req: CustomRequest, res: CustomResponse, next: 
     }
 
     const userRepository = AppDataSource.getRepository(User)
-    const secret = 'Super secret shit';
+    const secret = process.env.JWT_SECRET || "";
     const payload = jsonwebtoken.verify(token, secret);
 
     if (!payload.sub) {

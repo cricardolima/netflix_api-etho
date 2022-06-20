@@ -11,7 +11,7 @@ const PORT = 3000;
 
 const opts = {
   jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(), 
-  secretOrKey: 'Super secret shit'
+  secretOrKey: process.env.JWT_SECRET,
 };
 
 const strategy = new JwtStrategy(opts, function(jwt_payload, done) {
